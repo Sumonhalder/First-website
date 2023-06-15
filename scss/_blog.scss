@@ -1,0 +1,37 @@
+// blog area style
+#blog_area{
+   background: rgba(150, 15, 15, .5);
+   .child_blog{
+      flex-basis: 32%;
+      img{
+         display: block;
+         border-radius: 10px 10px 0 0 ;
+      }
+      .blog_info{
+         background: $whitecolor;
+         padding: 25px;
+         border-radius:0 0 10px 10px;
+         transition: .5s;
+         h4{
+            font-size: 25px;
+            text-transform: uppercase;
+            margin: 0 0 10px;
+            a{
+               color: $bkcolor;
+            }
+         }
+         p{
+            margin: 0 0 10px;
+         }
+         &:hover{
+            background: $bkcolor;
+            color: $whitecolor;
+            h4{
+               a{
+                  color: $pcolor;
+               }
+            }
+         }
+      }
+   }
+}

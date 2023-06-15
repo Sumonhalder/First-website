@@ -1,0 +1,116 @@
+/*====================
+   variable style page
+=====================*/
+
+// color
+$pcolor: #e67e22;
+$scolor: #d35400;
+$bgcolor: #f39c12;
+$whitecolor: #fff;
+$bkcolor: #2c3e50;
+
+// font weight
+$fontsm: 400;
+$fontmd: 600;
+$fontxl: 800;
+
+// body and p default style
+body,p{
+   font: {
+      size: 16px;
+      weight:$fontsm;
+   }
+   line-height: 1.5em;
+}
+
+// all heading default style
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+   line-height: 1.2em;
+   font: {
+      weight:$fontmd;
+   }
+}
+
+// default braking point for mobile
+$m_small: 200px;
+$m_medium: 809px;
+.container{
+   width: 1250px;
+   margin: 0 auto;
+   @media only screen and(min-width:$m_small) and(max-width:$m_medium) {
+      width:100%;
+      margin: 0 auto;
+   }
+}
+
+// default braking point for pads 
+$p_small: 810px;
+$p_medium: 1000px;
+.container{
+   @media only screen and(min-width:$p_small) and(max-width:$p_medium) {
+      width: 96%;
+      margin: 0 auto;
+   }
+}
+
+// default braking point for pc
+$c_small: 1001px;
+$c_medium: 1400px;
+.container{
+   @media only screen and(min-width:$c_small) and(max-width:$c_medium)  {
+      width: 96%;
+      margin: 0 auto;
+   }
+}
+
+// paddings
+$paddingsm: 10px 0;
+.paddingxl{
+   padding: 50px;
+   @media only screen and(min-width:$m_small) and(max-width:$m_medium){
+      padding: 15px;
+   }
+   @media only screen and(min-width:$p_small) and(max-width:$p_medium){
+      padding: 20px;
+   }
+}
+
+// margins 
+.m_top{
+   margin-top: 40px;
+   @media only screen and(min-width:$m_small) and(max-width:$m_medium){
+      margin-top: 15px;
+   }
+}
+// button call to action
+.btn_cta{
+   display: inline-block;
+   background: $bgcolor;
+   color: $whitecolor;
+   padding: 12px 15px;
+   border-radius: 7px;
+   font-size: 16px;
+   &:hover{
+      color: $whitecolor;
+      background: $bkcolor;
+   }
+}
+.tittle{
+   font: {
+      size: 40px;
+      weight: $fontxl;
+   }
+   text-transform: uppercase;
+}
+.sub_tittle{
+   font: {
+      size: 20px;
+      weight: $fontmd;
+   }
+   text-transform: uppercase;
+}

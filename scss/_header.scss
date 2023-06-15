@@ -1,0 +1,79 @@
+/*=================
+   header part style
+====================*/
+#header_area{
+   //top header area style
+   .top_header_area{
+      background: $pcolor;
+      color: $whitecolor;
+      padding: $paddingsm;
+      .mobile_bars{
+         display: none;
+      }
+      p{
+         font: {
+            size: 14px;
+            weight: $fontmd;
+         }
+         margin-top: 10px;
+         i{
+            margin-right: 10px;
+            color: $bkcolor;
+            &:hover{
+               transform: scale(1.2);
+            }
+         }
+      }
+      .ul{
+         text-align: right;
+         li{
+            margin-left: 10px;
+            a{
+               display: inline-block;
+               background: $bkcolor;
+               color: $whitecolor;
+               height: 40px;
+               width: 40px;
+               border-radius: 50%;
+               text-align: center;
+               padding: 8px 0 0;
+               font-size: 18px;
+               &:hover{
+                  background: $whitecolor;
+                  color: $pcolor;
+               }
+            }
+         }
+      }
+   }
+
+   // menu area style
+   .menu_area{
+      .logo_area{
+         flex-basis: 40%;
+      }
+      .main_menu{
+         flex-basis: 60%;
+         align-self: center;
+         .ul{
+            display: flex;
+            justify-content: end;
+            li{
+               margin-left: 25px;
+               a{
+                  font: {
+                     size: 16px;
+                     weight: $fontmd;
+                  }
+                  color: $bkcolor;
+                  &:hover{
+                     color: $scolor;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+// 

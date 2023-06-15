@@ -1,0 +1,40 @@
+/*===============
+   hero_area style
+==================*/
+#hero_area{
+   .hero_info{
+      flex-basis: 45%;
+      padding: 35px;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      h4{
+         font: {
+            size: 16px;
+            weight: $fontxl;
+         }
+         text-transform: uppercase;
+         line-height: 1em;
+      }
+      h2{
+         font: {
+            size: 36px;
+            weight: $fontxl;
+         }
+         text-transform: uppercase;
+         line-height: 1.2em;
+         margin: 0 0 8px;
+      }
+      p{
+         margin: 0 0 15px;
+      }
+   }
+   .hero_logo{
+      display: flex;
+      flex-basis: 55%;
+      justify-content: right;
+      img{
+         display: block;
+      }
+   }
+}

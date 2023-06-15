@@ -1,0 +1,486 @@
+/*=====================
+header part responsive
+======================*/
+// mobile responsive
+@media only screen and(min-width:$m_small) and(max-width:$m_medium) {
+   #header_area{
+      width: 100%;
+      position: relative;
+      .inner{
+         display: block;
+      }
+      .top_header_area{
+         .address,
+         .phone_number,
+         .email_address{
+            display: none;
+         }
+         .mobile_bars{
+            display: block;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            font-size: 25px;
+            cursor: pointer;
+         }
+         .ul{
+            display: block;
+            text-align: center;
+         }
+      }
+      .menu_area{
+         .logo_area{
+            display: block;
+            text-align: center;
+         }
+         .main_menu{
+            background: $scolor;
+            position: absolute;
+            left: -999999px;
+            width: 100%;
+            .ul{
+               display: flex;
+               flex-direction: column;
+               li{
+                  margin: 0 0 8px;
+                  &:last-child{
+                     margin: 0;
+                  }
+                  a{
+                     display: block;
+                        padding: 8px 10px;
+                     &:hover{
+                        color: $whitecolor !important;
+                        background-color: $bkcolor;
+                     }
+                  }
+                  
+               }
+            }
+            &.open{
+               left: 10px;
+            }
+         }
+      }
+   }
+}
+
+// tablet or pads header part responsive
+@media only screen and(min-width:$p_small) and(max-width:$p_medium) {
+   #header_area{
+      .top_header_area{
+         p{
+            font-size: 12px;
+            i{
+               margin-right: 5px;
+            }
+         }
+         .ul{
+            li{
+               a{
+               font-size:14px;
+               height: 30px;
+               width: 30px;
+               padding: 3px 0 0;
+            }
+            }
+         }
+      }
+   }
+}
+
+/*=========================
+   hero area responsive style
+==========================*/
+// hero area mobile responsive
+@media only screen and(min-width:$m_small) and(max-width:$m_medium){
+   #hero_area{
+      .inner{
+      flex-direction: column;
+      }
+      .hero_info{
+         padding: 15px;
+         order: 2;
+         h4{
+            font-size: 14px;
+         }
+         h2{
+            font-size: 25px;
+            margin-bottom: 0;
+         }
+         p{
+            font-size: 14px;
+         }
+      }
+      .hero_logo{
+         display: flex;
+         margin: 0 auto;
+         order: 1;
+         text-align: center;
+         img{
+            height: 300px;
+            width: auto;
+         }
+      }
+   }
+}
+
+// hero area tablet or pads responsive
+@media only screen and(min-width:$p_small) and(max-width:$p_medium) {
+   #hero_area{
+      .hero_info{
+         padding: 15px;
+         flex-basis: 50%;
+         h4{
+            font: {
+               size: 16px;
+               weight:$fontmd;
+            }
+         }
+         h2{
+            font: {
+               size: 25px;
+            }
+            margin-bottom: 3px;
+         }
+         P{
+            font-size: 14px;
+         }
+      }
+      .hero_logo{
+         img{
+            height: 300px;
+            width: auto;
+         }
+      }
+   }
+}
+
+/*============================
+   about area responsive style
+==============================*/
+// about area mobile responsive
+@media only screen and(min-width:$m_small) and(max-width:$m_medium){
+   #about_area{
+      .container{
+         .tittle{
+            font-size: 30px;
+         }
+         .sub_tittle{
+            font-size: 18px;
+         }
+      }
+      .inner{
+         flex-direction: column;
+         .about_number{
+            flex-basis: 100%;
+            padding: 15px;
+            h2{
+               font: {
+                  size: 25px;
+               }
+            }
+            h4{
+               font: {
+                  size: 15px;
+                  weight: $fontmd;
+               }
+            }
+         }
+         .about_info{
+            padding: 5px;
+            h4{
+               font-size: 16px;
+            }
+            h2{
+               font-size: 25px;
+            }
+            p{
+               font-size: 16px;
+               margin-bottom: 10px;
+            }
+         }
+      }
+   }
+}
+
+// about area tablet or pads responsive
+@media only screen and(min-width:$p_small) and(max-width:$p_medium){
+   #about_area{
+      padding: 25px 10px 25px;
+      .container{
+         .tittle{
+            font-size: 30px;
+         }
+         .sub_tittle{
+            font-size: 16px;
+         }
+      }
+      .inner{
+         flex-direction: column;
+         .about_number{
+            flex-basis: 100%;
+            padding:10px;
+            h2{
+               font: {
+                  size: 30px;
+               }
+            }
+            h4{
+               font: {
+                  size: 15px;
+                  weight: $fontmd;
+               }
+            }
+         }
+         .about_info{
+            padding: 5px;
+            h4{
+               font-size: 18px;
+            }
+            h2{
+               font-size: 30px;
+            }
+            p{
+               font-size: 16px;
+               margin-bottom: 10px;
+            }
+         }
+      }
+   }
+}
+
+/*============================
+   services area responsive style
+==============================*/
+// service area mobile responsive
+@media only screen and(min-width:$m_small) and(max-width:$m_medium){
+   #services_area{
+      .tittle{
+         font-size: 30px;
+      }
+      .sub_tittle{
+         font-size: 18px;
+      }
+      .inner{
+         flex-direction: column;
+         .service_menu{
+            padding: 15px 5px;
+            margin: 0 0 10px;
+            i{
+               font-size: 23px;
+               margin: 0 0 5px;
+            }
+            h2{
+               font: {
+                  size: 22px;
+                  weight: $fontxl;
+               }
+               margin: 0 0 5px;
+            }
+         }
+      }
+   }
+}
+// service area tablet or pads responsive
+@media only screen and(min-width:$p_small) and(max-width:$p_medium){
+   #services_area{
+      padding: 20px;
+      .tittle{
+         font-size: 30px;
+      }
+      .sub_tittle{
+         font-size: 16px;
+      }
+      .inner{
+         display: flex;
+         justify-content: space-between;
+      }
+      .service_menu{
+         padding: 10px;
+         flex-basis: 31%;
+         i{
+            font-size: 25px;
+         }
+         h2{
+            font-size: 25px;
+         }
+      }
+   }
+}
+
+/*============================
+   project area responsive style
+==============================*/
+// project area mobile responsive
+@media only screen and(min-width:$m_small) and(max-width:$m_medium){
+   #project_area{
+      .tittle{
+         font-size: 30px;
+      }
+      .sub_tittle{
+         font-size: 18px;
+      }
+      .inner_grid{
+         display: block;
+         img{
+            object-fit: contain;
+         }
+         .project_numbers{
+         margin-bottom: 15px;
+      }
+      }
+   }
+}
+
+// project area tablet or pads responsive
+@media only screen and(min-width:$p_small) and(max-width:$p_medium){
+   #project_area{
+      padding: 25px;
+      .inner_grid{
+         grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+      }
+   }
+}
+
+// project area pc responsive
+@media only screen and(min-width:$c_small) and(max-width:$c_medium){
+   #project_area{
+      .inner_grid{
+         grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      }
+   }
+}
+
+/*============================
+   blog area responsive style
+==============================*/
+// project area mobile responsive
+@media only screen and(min-width:$m_small) and(max-width:$m_medium){
+   #blog_area{
+      .tittle{
+         font-size: 30px;
+      }
+      .sub_tittle{
+         font-size: 18px;
+      }
+      .inner{
+         flex-direction: column;
+      }
+      .child_blog{
+         margin: 0 0 15px;
+         img{
+            width: 100%;
+         }
+         .blog_info{
+            padding: 10px 5px 10px;
+         }
+      }
+   }
+}
+
+// blog area tablet or pads responsive
+@media only screen and(min-width:$p_small) and(max-width:$p_medium){
+   #blog_area{
+      .child_blog{
+         img{
+            width: 100%;
+            height: auto;
+         }
+      }
+   }
+}
+
+/*============================
+   contact area responsive style
+==============================*/
+// contact area mobile responsive
+@media only screen and(min-width:$m_small) and(max-width:$m_medium){
+   #contact_area{
+      .tittle{
+         font-size: 30px;
+      }
+      .sub_tittle{
+         font-size: 18px;
+      }
+      padding: 10px;
+      .inner,.contact_info{
+         flex-direction: column;
+      }
+      .contact_info{
+         div{
+            padding: 20px;
+            margin: 0 0 20px;
+         }
+         iframe{
+            margin: 0 0 20px;
+         }
+      }
+   }
+}
+
+// contact area tablet or pads responsive
+@media only screen and(min-width:$p_small) and(max-width:$p_medium){
+   #contact_area{
+      .tittle{
+         font-size: 30px;
+      }
+      .sub_tittle{
+         font-size: 18px;
+      }
+      .inner{
+         flex-direction: column;
+      }
+      .contact_info{
+         flex-direction: column;
+         height: auto;
+         p{
+            i{
+               display: inline-block;
+               font-size: 15px;
+               margin: 0 10px 0;
+            }
+         }
+         div{
+            padding: 20px;
+            border-radius: 5px;
+            margin: 0 0 15px;
+            p{
+               font-size: 14px;
+            }
+         }
+         iframe{
+            margin: 0 0 20px;
+         }
+      }
+   }
+}
+
+// project area pc responsive
+@media only screen and(min-width:$c_small) and(max-width:$c_medium){
+   #contact_area{
+      padding: 20px;
+      .contact_info{
+         display: flex;
+         flex-basis: 60%;
+         flex-wrap: wrap;
+         div{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p{
+               font-size: 14px;
+               i{
+                  font-size: 18px;
+                  display: block;
+                  margin:0 0 10px;
+               }
+            }
+         }
+      }
+      .contact_form{
+         flex-basis: 38%;
+      }
+   }
+}

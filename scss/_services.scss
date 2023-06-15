@@ -1,0 +1,38 @@
+// services style
+#services_area{
+   background: rgba(125,22,10,.2);
+   .service_menu{
+      background: $whitecolor;
+      flex-basis: 32%;
+      border-radius: 5px;
+      box-shadow: 2px 2px 30px 2px rgba(10,10,10,.5);
+      padding: 25px;
+      transition: .7s;
+      i{
+         font-size: 30px;
+         color: $pcolor;
+         margin: 0 0 10px;
+      }
+      h2{
+         text-transform: uppercase;
+         margin: 0 0 10px;
+         font: {
+            weight:$fontxl;
+            size: 25px;
+         }
+      }
+      &:hover{
+         background: $bkcolor;
+         i{
+            background: transparent;
+            color: $whitecolor;
+         }
+         h2{
+            color:$pcolor;
+         }
+         p{
+            color: $whitecolor;
+         }
+      }
+   }
+}

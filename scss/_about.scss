@@ -1,0 +1,54 @@
+// about area style
+#about_area{
+   background: rgba(199, 193, 193,.3);
+   .about_number{
+      flex-basis: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .about_number_child{
+         flex-basis: 48%;
+         background: $bgcolor;
+         margin-bottom: 20px;
+         padding: 25px;
+         text-align: center;
+         border-radius: 10px;
+         h2{
+            font: {
+               size: 35px;
+               weight:$fontxl;
+            }
+            line-height: 1em;
+            margin: 0 0 5px;
+         }
+         h4{
+            font: {
+               size: 16px;
+               weight:$fontxl;
+            }
+            line-height: 1em;
+         }
+      }
+   }
+   .about_info{
+      flex-basis: 50%;
+      padding: 35px;
+      h4{
+         text-transform: uppercase;
+         font-weight: $fontxl;
+         color: $scolor;
+      }
+      h2{
+         text-transform: uppercase;
+         font-weight: $fontxl;
+         font: {
+            size: 30px;
+            weight:$fontxl;
+         }
+         margin: 0 0 5px;
+      }
+      p{
+         margin: 0 0 8px;
+      }
+   }
+}

@@ -1,0 +1,51 @@
+// footer area style
+#footer_area{
+   background: $bkcolor;
+   position: relative;
+   .top{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+      i{
+         height: 40px;
+         width: 40px;
+         background: $pcolor;
+         color: $whitecolor;
+         padding: 12px 0 0;
+         border-radius: 10px;
+      }
+   }
+   .logo_area{
+      width: 200px;
+      margin: 0 auto 15px;
+   }
+   .ul{
+      text-align: center;
+      margin-bottom: 20px;
+      li{
+         margin-left: 10px;
+         a{
+            display: inline-block;
+            background: $pcolor;
+            color: $whitecolor;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            text-align: center;
+            padding: 8px 0 0;
+            font-size: 18px;
+            &:hover{
+               background: $whitecolor;
+               color: $pcolor;
+            }
+         }
+      }
+   }
+   .copyright{
+      p{
+         font-size: 13px;
+         color: $whitecolor;
+      }
+   }
+}
